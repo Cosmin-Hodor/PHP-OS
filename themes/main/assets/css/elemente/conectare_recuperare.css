@@ -1,0 +1,110 @@
+.conectare > p
+{
+    max-width: max-content;
+    margin: 0 auto; 
+}
+
+.bloc_conectare
+{
+    width: 280px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: #fcfcfc;
+}
+
+.bloc_conectare > a
+{
+    display: block;
+    margin: 0 auto;
+    width: 153px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.bloc_conectare > form
+{
+    display: grid;
+}
+
+.bloc_conectare > form > input
+{
+    width: 250px;
+    height: 30px;
+    padding: 2px;
+    font-size: 20px;
+    margin: 0 auto 5px auto;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.show_password_hug
+{
+    position: relative;
+    display: inline-block;
+    width: max-content;
+    margin: 0 auto;
+}
+
+#arata_parola
+{
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    left: 80%;
+    bottom: 0%;
+    background: transparent;
+    background-image: url(/themes/main/assets/img/eye.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.show_password_hug > input
+{
+    width: 250px;
+    height: 30px;
+    padding: 2px;
+    font-size: 20px;
+    margin: 0 auto 5px auto;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.bloc_conectare > form > input[type=email]
+{
+    display: block;
+    opacity: 0%;
+    position: fixed;
+    z-index: -10;
+}
+
+.bloc_conectare > form > input[type=submit]
+{
+    background: var(--element-bg);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.bloc_conectare > form > input[type=submit]:hover
+{
+    background: #535353;
+}
+
+.raman_conectat
+{
+    width: max-content;
+    margin: 0 auto 10px auto;
+}
+
+#recuperare_cont
+{
+    display: block;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    margin: 0 auto 5px auto;
+}

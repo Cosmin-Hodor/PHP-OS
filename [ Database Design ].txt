@@ -1,0 +1,41 @@
+[ Database Design ]
+
+#Users
+-User_ID (PK)
+-Recovery_String
+-Username (UK)
+-Password
+-Is_Active
+-Is_Reported
+-Is_Blocked
+-Created_At_Date
+
+#Friends
+-User_ID (FK)
+-Friend_ID (FK)
+
+#Staff
+-User_ID (FK)
+-Role (FK)
+
+#Roles
+-Role ID (PK)
+-Description
+
+#Likes & Reacts
+-Post_ID (FK)
+-User_ID (FK)
+-React_Type
+
+#Posts
+-Post_ID (PK)
+-User_ID (FK)
+-Post_Title
+-Post_Content
+-Created_At_Date
+-Tags (FK)
+
+#Tagmap
+-ID
+-Tag_ID
+-Tag

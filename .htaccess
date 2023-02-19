@@ -1,0 +1,53 @@
+# Turn Rewrite Engine On
+RewriteEngine On
+
+# 404 -> Index
+ErrorDocument 404 /
+
+# Rewrite URL for login.php
+# NC makes the rule non case sensitive
+# L makes this the last rule that this specific condition will match
+
+RewriteRule ^home index.php?p=home [NC,L]
+
+RewriteRule ^profil/([^/]+)$ index.php?p=profile&u=$1 [L]
+
+RewriteRule ^cont index.php?p=account [NC,L]
+
+RewriteRule ^conectare index.php?p=login [NC,L]
+
+RewriteRule ^deconectare index.php?p=logout [NC,L]
+
+RewriteRule ^inregistrare index.php?p=register [NC,L]
+
+RewriteRule ^administrare index.php?p=admin [NC,L]
+
+RewriteRule ^notificari index.php?p=notifications [NC,L]
+
+RewriteRule ^postare/([^/]+)$ index.php?p=post&id=$1 [L]
+
+# Redirect path to rewriten url
+
+RedirectMatch 301 /themes/main/pages/account/account.php /cont
+
+RedirectMatch 301 /themes/main/pages/account/login.php /conectare
+
+RedirectMatch 301 /themes/main/pages/account/logout.php /deconectare
+
+RedirectMatch 301 /themes/main/pages/account/notifications.php /notificari
+
+RedirectMatch 301 /themes/main/pages/account/register.php /inregistrare
+
+RedirectMatch 301 /themes/main/pages/index/page.php /home
+
+RedirectMatch 301 /themes/main/pages/maintenance/404.php /home
+
+RedirectMatch 301 /themes/main/pages/maintenance/maintenance.php /home
+
+RedirectMatch 301 /themes/main/pages/account/profile.php /membru
+
+RedirectMatch 301 /themes/main/pages/post/index.php /home
+
+
+
+

@@ -1,0 +1,55 @@
+.tooltip_hug > input[type="text"]
+{
+    width: 250px;
+    height: 30px;
+    padding: 2px;
+    font-size: 20px;
+    margin: 0 auto 5px auto;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.tooltip_hug
+{
+    position: relative;
+    display: inline-block;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.tooltip_hug .tooltip_text
+{
+    visibility: hidden;
+    width: 250px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 24%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip_hug .tooltip_text::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip_hug:hover .tooltip_text
+{
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,252 @@
+.top_bar
+{
+    background: var(--meniu_principal);
+    height: 50px;
+}
+
+.meniu_principal
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: inherit;
+
+}
+
+.meniu_principal > a
+{
+    grid-column: 2/3;
+    width: 110px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo_PHP-OS
+{
+    background: transparent;
+    background-image: url(/themes/main/assets/img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    height: inherit;
+    width: 130px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#deschide_meniu
+{
+    grid-column: 1/2;
+    background: transparent;
+    background-image: url(/themes/main/assets/img/hamburger_menu.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    width:50px;
+    height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#deschide_meniu:hover
+{
+    opacity: 50%;
+}
+
+#m_l
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--meniu_principal);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    scrollbar-width: thin;
+}
+
+#m_l::-webkit-scrollbar 
+{
+    width: 10px;
+}
+   
+#m_l::-webkit-scrollbar-thumb 
+{
+    background: #666;
+    border-radius: 20px;
+}
+  
+#m_l::-webkit-scrollbar-track 
+{
+    background: #ddd;
+    border-radius: 20px;
+}
+
+#m_l a 
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#m_l a:hover
+{
+    color: #f1f1f1;
+}
+
+#m_l .buton_close
+{
+    position: absolute;
+    background: transparent;
+    color: #cecece;
+    border: 0;
+    top: 0;
+    font-size: 36px;
+    left: 210px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#m_l .buton_close:hover
+{
+    opacity: 50%;
+}
+
+.cont
+{
+    display: flex !important;
+}
+
+.cont:hover > .nume_cont
+{
+    color: #f1f1f1;
+}
+
+.avatar_meniu
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+
+.functii_utilizator
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 10px;
+    text-align: center;
+}
+
+#notificari
+{
+    background: transparent;
+    background-image: url(/themes/main/assets/img/notificari.svg);
+    background-repeat: no-repeat;
+    border: none;
+    width: 40px;
+    height: 50px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#notificari:hover
+{
+    opacity: 50%;
+}
+
+#messenger
+{
+    background: transparent;
+    background-image: url(/themes/main/assets/img/messenger.svg);
+    background-repeat: no-repeat;
+    border: none;
+    width: 40px;
+    height: 50px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#messenger:hover
+{
+    opacity: 50%;
+}
+
+.logo_platforma
+{
+    background: transparent;
+    background-image: url(/themes/main/assets/img/logo_platforma.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    width: 280px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#conectare_succes 
+{
+
+    display: block;
+    height: 30px;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    border-bottom: 1.5px solid black;
+
+    background: linear-gradient(89deg, #12bf00, #0e9400);
+    background-size: 400% 400%;
+
+    -webkit-animation: PrinAlunecare 3s ease infinite;
+    -moz-animation: PrinAlunecare 3s ease infinite;
+    animation: PrinAlunecare 3s ease infinite;
+}
+
+#actiune_esuata
+{
+    display: block;
+    height: max-content;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    border-bottom: 1.5px solid black;
+
+    background: linear-gradient(89deg, #ff0000, #5a0000);
+    background-size: 400% 400%;
+
+    -webkit-animation: PrinAlunecare 3s ease infinite;
+    -moz-animation: PrinAlunecare 3s ease infinite;
+    animation: PrinAlunecare 3s ease infinite;
+}
+}
+
+@-webkit-keyframes PrinAlunecare 
+{
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes PrinAlunecare 
+{
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes PrinAlunecare 
+{
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
