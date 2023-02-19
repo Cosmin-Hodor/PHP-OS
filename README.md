@@ -14,8 +14,10 @@ Do as you please with it, no responsability taken on the owners behalf.
 Am not responsable for any damages or potential changes brought by other contributors, if any.
 
 ## About
-This code is no longer being actively maintained and is part of my personal project archives. The project was initiated in late 2019 but had to be abandoned shortly afterwards due to my scheduling constraints.
+The project was intended to provide a private group functionality similar to that of Facebook. 
 
-A database design file can be found in the root directory for reference purposes.
+The project was initiated in late 2019 with the aim of creating a web application that would allow users to create and manage a private group, invite members, and share posts and other media within the group. 
 
-It is worth noting that the project remains incomplete and requires additional development efforts to reach its intended state.
+However, due to scheduling conflicts and other commitments, the project was eventually abandoned and is no longer being actively maintained. 
+
+While a database design file can still be found in the project's root directory, it is worth noting that the project remains incomplete and would require significant development efforts to reach its intended functionality.
